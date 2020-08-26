@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+<body onload="start()">
+
+    <div class="container">
+        <div class="wrapper">
+            <h2 class="result"></h2>
+        </div>
+        <form onsubmit="return false">
+            <fieldset>
+                <legend id="resource_title">Intel generation rate</legend>
+                <label for="intel">Max resource: </label><input type="number" name="resource" id="resource_input" value="70" required><br><br>
+                <label for="hour">Hour(s): </label><input type="number" name="hour" id="hour_input" value="4" required><br><br>
+                <label for="minute">Minutes(s): </label><input type="number" name="minute" id="minute_input" value="45" required><br><br>
+                <input type="submit" value="Toggle Resouce" onclick="toggleResource()">
+            </fieldset>
+        </form>
+        <form onsubmit="return false">
+            <fieldset>
+                <legend>Time</legend>
+                <label for="endtime">End time: </label><input type="text" name="endtime" id="endtime_input" required><br><br>
+                <input type="submit" value="Submit" onclick="calculateIntel()">
+            </fieldset>
+        </form>
+        <form onsubmit="return false">
+            <fieldset>
+                <legend>Resource</legend>
+                <label for="eintel">Expected Resource: </label><input type="number" name="eresource" id="eresource_input" value="255" required><br><br>
+                <input type="submit" value="Submit" onclick="calculateTime()">
+            </fieldset>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

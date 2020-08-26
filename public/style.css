@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 360px;
+    display: block;
+}
+
+.wrapper {
+    display: block;
+    text-align: center;
+}
+
+input[type=submit] {
+    margin: 0 auto;
+}
+
+h2.result {
+    color: white;
+}
+
+legend {
+    color: white;
+}
