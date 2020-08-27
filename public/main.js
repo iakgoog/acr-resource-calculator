@@ -21,7 +21,7 @@ function toggleResource() {
     if (resourceIsToken) {
         document.getElementById('resource_title').innerHTML = "Intel generation rate";
         document.getElementById('resource_input').value = 70;
-        document.getElementById('hour_input').value = 4;
+        document.getElementById('hour_input').value = 5;
         document.getElementById('minute_input').value = 45;
         resourceIsToken = false;
     } else {
